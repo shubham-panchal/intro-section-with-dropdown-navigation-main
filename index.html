@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="outer-wrapper">
+          <div class="logo">
+            <img src="/images/logo.svg" alt="" />
+          </div>
+          <ul class="link-wrapper">
+            <li class="navlink dropdown-link-desktop" data-icon="arrow-down">
+              Features
+            </li>
+
+            <li class="navlink dropdown-link-desktop" data-icon="arrow-down">
+              Company
+            </li>
+            <li class="navlink">Carrers</li>
+            <li class="navlink">About</li>
+          </ul>
+          <ul class="sub-links-desktop features-dropdown-desktop hidden">
+            <li class="navlink sublink" data-icon="icon-todo">Todo List</li>
+            <li class="navlink sublink" data-icon="icon-calendar">Calendar</li>
+            <li class="navlink sublink" data-icon="icon-reminders">
+              Reminders
+            </li>
+            <li class="navlink sublink" data-icon="icon-planning">Planning</li>
+          </ul>
+          <ul class="sub-links-desktop company-dropdown-desktop hidden">
+            <li class="navlink sublink">History</li>
+            <li class="navlink sublink">Out Team</li>
+            <li class="navlink sublink">Blog</li>
+          </ul>
+        </div>
+        <div class="login-register-wrapper-desktop">
+          <a href="">Login</a>
+          <button class="register-btn">Register</button>
+        </div>
+
+        <div class="hamburger-menu">
+          <a href=""><img src="/images/icon-menu.svg" alt="" /></a>
+        </div>
+      </header>
+      <main>
+        <section class="section--1">
+          <img
+            class="hero-mobile-image"
+            src="/images/image-hero-mobile.png"
+            class="hero--image"
+            alt=""
+          />
+          <img
+            class="hero-desktop-image"
+            src="/images/image-hero-desktop.png"
+            class="hero--image"
+            alt=""
+          />
+        </section>
+        <section class="section--2">
+          <h1 class="section--2-heading">Make remote work</h1>
+          <p class="section--2-content">
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button class="button">Learn more</button>
+        </section>
+        <div class="section--3">
+          <a href="" class="section--3--links"
+            ><img src="/images/client-databiz.svg" alt=""
+          /></a>
+          <a href="" class="section--3--links"
+            ><img src="/images/client-audiophile.svg" alt=""
+          /></a>
+          <a href="" class="section--3--links"
+            ><img src="/images/client-meet.svg" alt=""
+          /></a>
+          <a href="" class="section--3--links"
+            ><img src="/images/client-maker.svg" alt=""
+          /></a>
+        </div>
+      </main>
+      <div class="overlay hidden"></div>
+      <div class="hamburger-menu--body hidden">
+        <div class="close-btn-wrapper">
+          <a href="" class="close-btn"
+            ><img src="/images/icon-close-menu.svg" alt=""
+          /></a>
+        </div>
+        <div class="nav-links-wrapper">
+          <ul class="nav-links">
+            <li class="navlink dropdown-link" data-icon="arrow-down">
+              Features
+            </li>
+            <ul class="sub-links features-dropdown hidden">
+              <li class="navlink sublink" data-icon="icon-todo">Todo List</li>
+              <li class="navlink sublink" data-icon="icon-calendar">
+                Calendar
+              </li>
+              <li class="navlink sublink" data-icon="icon-reminders">
+                Reminders
+              </li>
+              <li class="navlink sublink" data-icon="icon-planning">
+                Planning
+              </li>
+            </ul>
+
+            <li class="navlink dropdown-link" data-icon="arrow-down">
+              Company
+            </li>
+
+            <ul class="sub-links company-dropdown hidden">
+              <li class="navlink sublink">History</li>
+              <li class="navlink sublink">Out Team</li>
+              <li class="navlink sublink">Blog</li>
+            </ul>
+
+            <li class="navlink">Carrers</li>
+            <li class="navlink">About</li>
+          </ul>
+        </div>
+        <div class="login-register-wrapper">
+          <a href="">Login</a>
+          <button class="register-btn">Register</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
